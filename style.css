@@ -1,0 +1,215 @@
+.rolling_image {
+   display:block;
+    width: 100%;
+    border-radius: 20px;
+    
+    
+}
+.redglasses{
+    
+    display: flex;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height:3000px;
+    background: rgba(255, 0, 0, 0.6);
+}
+.glasses_on{
+    position: absolute;
+    transform: translateY(-100px);
+    left:200px;
+    visibility: visible;
+}
+.glasses_off{
+    position: absolute;
+    transform: translateY(-100px);
+    left:200px;
+    visibility: hidden;
+
+}
+.gallery {
+    
+    transition: 1s;
+    padding:  15px;
+      
+   
+}
+.gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+    box-shadow: black 10px 10px 10px; 
+    
+}
+.textbox {
+    display: flex;
+    border: 3px solid black;
+    border-radius: 20px;
+    background: linear-gradient(90deg,#55e7fc,#0162c8);
+    transform: translateY(10px);
+    
+
+}
+.textbox7 {
+    display: flex;
+    position:absolute;
+    top:5px;
+    margin:auto;
+    border: 3px solid black;
+    border-radius: 20px;
+    background: linear-gradient(90deg,#55e7fc,#0162c8);
+    
+}
+
+.text1{
+    display: inline-block;
+    font-family: arial;
+    color: green;
+    margin: 20px 30px;
+    
+       
+}
+
+.text2{
+    display: inline-block;
+    font-family: arial;
+    color: blueviolet;
+    margin: 20px 30px;
+     
+
+}
+.text3{
+    display: inline-block;
+    font-family: arial;
+    color: ghostwhite;
+    margin: 20px 30px;
+}
+    
+.image__overlay {
+    position:absolute;
+    top: 8px;
+    left: 8px;
+    width: 750px;
+    height: 562px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-family:  sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    font-weight:  bold;
+   
+
+   
+    opacity: 0;
+    transition: opacity 0.25s;
+    
+}
+
+.image__overlay:hover{
+    opacity:1;
+    
+}
+.image__overlay >* {
+   transform: translateY(280px);
+}
+.image__overlay:hover >* {
+   transform: translateY(250px);
+
+}
+ 
+.parentbox {
+  width: 800px;
+  height: 3000px;
+  background: white;
+  transition: width 2s;
+  transition-delay: 0.2s;
+    
+}
+
+.childbox {
+  width: 100px;
+  height: 100px; 
+  background: red;
+}
+.childbox2 {
+  width: 100px;
+  height: 100px;
+  margin: 0px 400px;
+  background: red;
+  opacity: 0;
+    
+    
+  
+  transition-delay: 0.2s;
+ }  
+.parentbox:hover .childbox {
+
+  animation: right 2s forwards ;
+      
+}
+.parentbox:hover .childbox2 {
+    
+  animation:  down 400ms forwards linear 2s;
+      
+}
+.redpick {
+  opacity: 0;
+     position: absolute;
+    top: 62px; 
+   
+}
+.redpick:hover {
+    opacity: 1;    
+    
+}
+
+.bluepick {
+  opacity: 0;
+     position: absolute;
+    top: 320px; 
+   
+}
+.bluepick:hover {
+    opacity: 1;
+}
+    
+.takepill {
+    transform: translateX(200px);
+    color: green;
+}
+.bloodsplash {
+    
+    position: absolute;
+    transform: translateY(50px);
+    transform: translateX(220px);
+}
+        
+
+@keyframes right{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+    width: 500px ; 
+    }
+      
+ }
+@keyframes down{
+    0%{
+        opacity: 1;
+    }
+    100%{
+    height: 3000px;
+    opacity:1
+    }
+
+    } 
+<!--.dailysport {
+        display: flex;
+        transform: translateX(500px);
+        
+    }-->
+
+    

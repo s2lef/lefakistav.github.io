@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+              
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA- 213023411-1"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'UA-213023411-1');
+     </script>
+
+      <!--Device scaling-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <title>GAR</title>
+    </head>
+    <body>
+        <div class="rolling_image">
+        
+        <!--<img src="images/raxh.jpg" alt="raxh" width="500px" >-->
+        <img id="image" src="images/backround/0.jpg" width=100%>
+        </div>  
+        <p></p>
+        
+     <script>
+
+      var imageSources =["images/backround/0.jpg","images/backround/1.jpg","images/backround/2.jpg","images/backround/3.jpg","images/backround/4.jpg","images/backround/5.jpg","images/backround/6.jpg","images/backround/7.jpg","images/backround/8.jpg","images/backround/9.jpg","images/backround/10.jpg","images/backround/11.jpg"]
+
+      var index = 0;
+      setInterval (function(){
+      if (index === imageSources.length) {
+      index = 0;
+       }
+       document.getElementById("image").src = imageSources[index];
+       index++;
+       } , 4000);
+
+     </script>
+        <p></p>
+    
+        
+            <div class="image__title">
+             I love Lefkada
+            </div>
+              
+       
+    
+        <p></p>
+            
+      <div class="gallery"> 
+        
+        <a href="images/leyakdaveltiomeno.jpg" ><img src="images/website_QR.jpeg" alt="qr" width="100px" ></a>
+        <a href="index3.html" ><img src="images/website_QR.jpeg" alt="qr" width="100px" ></a>
+     </div>  
+        <div class="photolines">
+        </div>
+     <div class="textbox7">
+        <a href="indexm.html">
+              <h1 class="text1">matrix</h1>
+        </a>
+            
+        <a href="index4.html">
+               <h1 class="text2">vote</h1>
+        </a>
+    </div>
+    
+        
+    </body>
+</html>

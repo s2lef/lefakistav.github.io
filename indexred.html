@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+              
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA- 213023411-1"></script>
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'UA-213023411-1');
+     </script>
+
+      <!--Device scaling-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <title>GAR</title>
+    </head>
+    <body>
+         <div class="redglasses"> 
+         </div> 
+            
+        <div class="rolling_image">
+        
+        <!--<img src="images/raxh.jpg" alt="raxh" width="500px" >-->
+        <img id="image" src="images/raxh.jpg" >
+        </div>
+        <p></p>
+        
+     <script>
+
+      var imageSources = ["images/raxh.jpg", "images/aigiannis.jpg",]
+
+      var index = 0;
+      setInterval (function(){
+      if (index === imageSources.length) {
+      index = 0;
+       }
+       document.getElementById("image").src = imageSources[index];
+       index++;
+       } , 2000);
+
+     </script>
+        <p></p>
+              
+
+        <div class="image__overlay">
+            <div class="image__title">
+             I love Lefkada 
+            </div>
+              
+        </div>
+    
+        <p></p>
+            
+      <div class="gallery"> 
+        
+        <a href="images/leyakdaveltiomeno.jpg" ><img src="images/website_QR.jpeg" alt="qr" width="500px" ></a>
+        <a href="index3.html" ><img src="images/website_QR.jpeg" alt="qr" width="500px" ></a>
+          
+        <img src="images/%CE%B1%CE%B8%CE%BB%CE%B7%CF%84%CE%B9%CE%BA%CE%B7%20%CE%B5%CE%BD%CE%B7%CE%BC%CE%B5%CF%81%CF%89%CF%83%CE%B7.JPG" alt="sports"
+             width="1000px">
+
+     </div> 
+        
+     <div class="textbox">
+        <a href="index2.html">
+              <h1 class="text1">matrix</h1>
+        </a>
+            
+        <a href="index4.html">
+               <h1 class="text2">vote</h1>
+        </a>
+     </div>
+    
+        
+        <p><b>Note:</b> The transition effect has a 1 second delay before starting</p>
+        <div class="parentbox">
+            <div class="childbox"></div>
+            <div class="childbox2"></div>
+        </div> 
+  
+        <div class="bloodsplash">
+        
+         <img src="images/blod.JPG" alt="blood" width="600px">
+        </div> 
+    
+      
+        
+    </body>
+</html>
